@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+if [[ $1 == "build" ]]; then
+    ./tailwindcss -i styles.css -o src/styles.css --minify
+fi
+
+if [[ $1 == "watch" ]]; then
+    ./tailwindcss -i styles.css -o src/styles.css --watch
+fi
+
+if [[ $1 == "init" ]]; then
+    curl -LO https://github.com/tailwindlabs/tailwindcss/releases/download/v3.0.23/tailwindcss-linux-x64
+    mv tailwindcss-linux-x64 tailwindcss
+    chmos +x tailwindcss
+fi
+
