@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 
 if [[ $1 == "build" ]]; then
-    ./tailwindcss -i styles.css -o src/styles.css --minify
+    ./tailwindcss -i styles.css -o docs/styles.css --minify
 fi
 
 if [[ $1 == "watch" ]]; then
-    ./tailwindcss -i styles.css -o src/styles.css --watch
+    ./tailwindcss -i styles.css -o docs/styles.css --watch
 fi
 
 if [[ $1 == "init" ]]; then
