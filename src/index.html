@@ -10,19 +10,29 @@
   </head>
   <body class="subpixel-antialiased">
     <div class="container mx-auto py-4">
-      <nav class="flex items-center space-x-4">
-        <a class="flex" href="/">
-          <img class="h-8 pr-2" src="favicon.svg" alt="Favicon">
-          <p class="font-bold text-2xl">
-            Crispmacs
+      <nav class="flex justify-between">
+        <div class="flex items-center space-x-4">
+          <a class="flex" href="/">
+            <img class="h-8 pr-2" src="favicon.svg" alt="Favicon">
+            <p class="font-bold text-2xl text-slate-800">
+              Crispmacs
+            </p>          
+          </a>
+          <p class="xl:border-l xl:border-gray-200 text-gray-400 text-xl pl-4">
+            Lisp + Rust powered Emacs
           </p>          
-        </a>
-        <p class="xl:border-l xl:border-gray-200 text-gray-400 text-xl pl-4">
-          Lisp + Rust powered Emacs
-        </p>
+        </div>
+        <div class="flex items-center space-x-4 text-2xl">
+          <a target="_blank" href="https://github.com/knarkzel/crispmacs/blob/master/DOCS.md#crisp-documentation">
+            Docs
+          </a>
+          <a target="_blank" href="https://github.com/knarkzel/crispmacs">
+            Repository
+          </a>
+        </div>
       </nav>
     </div>
-    <div class="bg-gradient-to-r from-sky-500 to-blue-700 py-4 pb-4">
+    <div class="bg-gradient-to-r from-sky-400 to-blue-800 py-4 pb-8">
       <div class="container mx-auto text-white">
         <h1 class="text-4xl text-center font-bold pb-2">
           Lightning-fast and Powerful Code Editor
@@ -50,6 +60,36 @@
           Native GUI and Rust powered performance, we as developers know what you
           need for an essential tool like a code editor. Write code with joy in Crispmacs.
         </p>
+        <div class="flex flex-wrap my-8 mx-4">
+          <div class="text-center md:w-1/2 lg:w-1/3 p-8 hover:bg-white hover:shadow-xl transition duration-200 rounded">
+            <h1 class="text-2xl font-bold my-2">
+              Buttery Smooth
+            </h1>
+            <p class="text-xl text-gray-600">
+              GUI runs at a smooth 60 fps using Rust, no more waiting on launching
+              the editor, and any lag on your keystroke will be treated as a bug and
+              get fixed.
+            </p>
+          </div>
+          <div class="text-center md:w-1/2 lg:w-1/3 p-8 hover:bg-white hover:shadow-xl transition duration-200 rounded">
+            <h1 class="text-2xl font-bold my-2">
+              Cross Platform
+            </h1>
+            <p class="text-xl text-gray-600">
+              Crispmacs works on Linux, macOS, Windows and in the browser! This is all
+              thanks to the egui crate.
+            </p>
+          </div>
+          <div class="text-center md:w-1/2 lg:w-1/3 p-8 hover:bg-white hover:shadow-xl transition duration-200 rounded">
+            <h1 class="text-2xl font-bold my-2">
+              Syntax Highlighting
+            </h1>
+            <p class="text-xl text-gray-600">
+              Code Syntax Highlighting provided by the syntect crate ensures that
+              syntax highlighting won't slow down the editor.
+            </p>
+          </div>
+        </div>
       </div>      
     </div>
   </body>
